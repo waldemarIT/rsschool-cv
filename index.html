@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Vladyslav Sklema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vladyslav Sklema</h1>
+        
+        <img src="avatar.png" alt="Vladyslav Sklema - Front-end Developer" width="200">
+
+        <section id="about">
+            <h2>Self-Introduction</h2>
+            <p>My name is Vladyslav. I am a highly motivated and hardworking individual with a strong desire to develop as a Front-end Developer, specifically focusing on the Angular framework. I am dedicated to continuous learning and always strive to complete tasks with precision and persistence.</p>
+        </section>
+
+        <section id="contacts">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Discord:</strong> waldemar3276</li>
+                <li><strong>Email:</strong> <a href="mailto:vladsklemapl@gmail.com">vladsklemapl@gmail.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/waldemarIT">waldemarIT</a></li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 &amp; CSS3</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+                <li>C++ (Algorithms)</li>
+                <li>SQL (MySQL)</li>
+                <li>Knowledge of ISTQB standards</li>
+            </ul>
+        </section>
+
+        <section id="code">
+            <h2>Code Example</h2>
+            <p>This function parses a balance from a string, handling commas and converting it to a number:</p>
+            <pre><code>
+                const parseBalance = (str) =&gt; {
+                let res = "";
+                let flag = false;
+                for (let i = str.length - 1; i &gt;= 0; i--) {
+                    const ch = str.charCodeAt(i);
+                    if (ch &gt;= 48 &amp;&amp; ch &lt;= 57) {
+                    res = str[i] + res;
+                    flag = true;
+                    } else if (ch === 44) {
+                    res = "." + res;
+                    } else if (flag) {
+                    break;
+                    }
+                }
+                return parseFloat(res);
+                };
+            </code></pre>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Gdańsk University of Technology (Politechnika Gdańska)</strong><br>
+                    Major: Informatics (Computer Science)
+                </li>
+                <li><strong>RS School</strong> - JS/Front-end Course (2026)</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li><strong>English:</strong> B2 (Upper-Intermediate)</li>
+                <li><strong>Polish:</strong> B2-C1 (Advanced)</li>
+                <li><strong>Ukrainian/Russian:</strong> Native</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vladyslav Sklema</p>
+        <a href="https://github.com/waldemarIT">GitHub Profile</a>
+        <a href="https://rs.school/courses/short-track">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="RS School Logo" width="100">
+        </a>
+    </footer>
+</body>
+</html>
